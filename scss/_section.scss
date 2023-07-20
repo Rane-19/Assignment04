@@ -1,0 +1,136 @@
+section {
+    contentWrapper::marker {
+        content: none;
+    }
+    
+    
+    .second-banner {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        position: relative;
+        top: 8rem;
+        color: var(--light-color);
+        background-color: var(--dark-color);
+        width: 100%;
+        justify-content: center; /* Updated value */
+        align-items: center; /* Added property */
+    }
+    
+    
+    .second-banner h2 {
+        padding: 1rem 0 1rem 2rem;
+        width: 100%; 
+        text-align: left; 
+    }
+    
+    
+    
+    
+    /* Child selectore ............................... */
+    
+    
+    section > a {
+        padding: 0 2rem;
+        text-decoration: none;
+        list-style: none;
+        color: var(--second-color);
+        width: 100%; /* Added property */
+        text-align: left; 
+    }
+    
+    
+    .image-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom:  1rem;
+        padding: 1rem;
+    }
+    
+    
+    
+    .contentWrapper {
+        display:block ;
+        border: .1rem solid var(--second-color);
+        margin: .3rem .3rem;
+        padding: .2rem;
+    }
+    
+    
+    .image-info img {
+        width: 100%;
+        max-width: 18rem;
+     }
+    
+    .card-href{
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right:  1.5rem;
+    }
+    
+    .placeholder {
+        display: flex;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
+    
+    /* Descendant selectore ............................... */
+    
+    
+    div  h3 {
+        color: white;
+        font-size: .9rem;
+        text-align: justify;
+        align-items: center;
+        line-height: 1.5rem;
+        font-weight: 200;
+        box-sizing: content-box;
+        max-width: 15rem;
+        margin: 0 1rem ; 
+    }
+    
+    
+    .card-information h3{
+        margin-right: 0;
+        margin-left: 1.5rem;
+    }
+    
+    
+    @media screen and (min-width: 68em) {
+    
+    
+        .first-banner{
+            justify-content: center;
+    
+        }
+    
+        .first-banner img{
+            max-width: 60%;
+            padding: 1rem;
+        }
+    
+        .second-banner {
+            top: 8rem;
+        }
+    
+        h3.headline{
+            margin-left: 3rem;
+            margin-top: 3rem;
+        }
+    
+        .card-information h3 {
+            font-size: 1rem;
+    
+        }
+    
+        #second-banner-photo {
+            display: none;
+        }
+    
+    }
+    
+    
+}
