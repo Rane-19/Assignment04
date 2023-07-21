@@ -1,7 +1,6 @@
-section {
-    contentWrapper::marker {
-        content: none;
-    }
+@use 'variables';
+@use 'mixins';
+@use 'placeholders';
     
     
     .second-banner {
@@ -10,12 +9,13 @@ section {
         font-size: 1rem;
         position: relative;
         top: 8rem;
-        color: var(--light-color);
-        background-color: var(--dark-color);
+        color: $light-color;
+        background-color: $dark-color;
         width: 100%;
         justify-content: center; /* Updated value */
         align-items: center; /* Added property */
     }
+
     
     
     .second-banner h2 {
@@ -50,12 +50,10 @@ section {
     
     
     
-    .contentWrapper {
-        display:block ;
-        border: .1rem solid var(--second-color);
-        margin: .3rem .3rem;
-        padding: .2rem;
-    }
+   
+  .contentWrapper {
+    @extend %card-style; 
+  }
     
     
     .image-info img {
@@ -133,4 +131,3 @@ section {
     }
     
     
-}

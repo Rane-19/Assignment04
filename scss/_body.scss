@@ -1,11 +1,17 @@
+@use 'variables';
+@use 'mixins';
+
 body {
-    background-color: #ffffff;
-    margin: 0;
-    font-family:"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;
-    h1{
-        font-family: 'oswald' , Arial, Helvetica, sans-serif;
-    }
-    div a:first-child {
-        color: #072179;
-    }
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  h1 {
+    font-family: 'oswald', Arial, Helvetica, sans-serif;
+  }
+
+  div a:first-child {
+    color: #072179;
+  }
 }

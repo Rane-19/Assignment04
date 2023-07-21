@@ -1,17 +1,21 @@
-footer {
-    background-color: #ffffff;
-    color: #2a2a2a;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    padding-top: 2rem;
-    position: relative;
-    top: 8rem;
-    h3 {
+@use 'variables';
+
+     footer {
+        background-color: #ffffff;
         color: #2a2a2a;
-        padding: 0;
-        margin: 0;
-    }
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 2rem;
+        position: relative;
+        top: 8rem;
+
+     h3 {
+            color: #2a2a2a;
+            padding: 0;
+            margin: 0;
+        }
+
     .footer-apps{
         display: flex;
         flex-direction: row;

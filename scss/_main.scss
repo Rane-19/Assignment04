@@ -1,3 +1,6 @@
+@use 'variables';
+@use 'mixins';
+
 main {
     .first-banner{
         display: none;
@@ -14,6 +17,15 @@ main {
     }
 
     /* CSS animations and  Attribute Selector ............................... */
+
+    section > a {
+        padding: 0 2rem;
+        text-decoration: none;
+        list-style: none;
+        color: $second-color;
+        width: 100%; /* Added property */
+        text-align: left;
+      }
 
     img[class="image-ban"] {
         max-width: 53.5rem;

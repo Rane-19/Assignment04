@@ -1,20 +1,22 @@
-.menuButton {
-    background-color: transparent;
-    border: none;
-    border-left: .1rem solid black;
-    padding-left:.5rem ;
-    box-sizing: border-box;
-    color: #e60505;
-    overflow: hidden;
-    margin-top: .8rem;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    z-index: 10;
-    grid-column: 2/5;
-    width: 5rem;
+@use 'variables';
+@use 'mixins';
 
+.menuButton {
+  background-color: transparent;
+  border: none;
+  border-left: .1rem solid black;
+  padding-left: .5rem;
+  box-sizing: border-box;
+  color: #e60505;
+  overflow: hidden;
+  margin-top: .8rem;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 10;
+  grid-column: 2/5;
+  width: 5rem;
     .headerSearchBar{
         display: none;
     }
