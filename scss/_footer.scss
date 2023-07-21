@@ -1,0 +1,42 @@
+@use 'variables';
+
+     footer {
+        background-color: #ffffff;
+        color: #2a2a2a;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 2rem;
+        position: relative;
+        top: 8rem;
+
+     h3 {
+            color: #2a2a2a;
+            padding: 0;
+            margin: 0;
+        }
+
+    .footer-apps{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2rem;
+    }
+    .team {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 2rem; */
+    }
+    .local-stations ul {
+        list-style: none;
+    }
+    
+    .local-stations {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+    }
+}

@@ -1,0 +1,147 @@
+header {
+    display: grid;
+    position: fixed;
+    background-color: white;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    z-index: 3;
+    width: 100%;
+
+    .site-header {
+        display: grid;
+        position: relative;
+        grid-template-columns: .5fr 1fr 1fr 1.5fr .5fr;
+        justify-items: baseline;
+        border-bottom: .05rem solid gray;
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+    .global-header{
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        justify-items: baseline;
+        grid-row: 2/2;
+        width: 100%;
+        align-items: left;
+    }
+
+    .global-nav {
+        padding-bottom: .5rem ;
+        width: 7rem;
+    }
+    
+    #covid-link {
+        font-weight: 700;
+    }
+    
+    .global-link {
+        padding: 1rem .5rem;
+        font-size: .9rem;
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+    
+     
+    #logo {
+        width: 3rem;
+        margin: 1rem ; 
+        grid-column: 1/5;
+    }
+    
+    
+    .site-navigation {
+        position:relative;
+      display: flex;
+    }
+    
+    .site-navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .site-navigation.toggled ul {
+        display: block;
+    }
+    
+    .menuButton{
+        background-color: transparent;
+        border: none;
+        border-left: .1rem solid black;
+        padding-left:.5rem ;
+        box-sizing: border-box;
+        color: #e60505;
+        overflow: hidden;
+        margin-top: .8rem;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        z-index: 10;
+        grid-column: 2/5;
+        width: 5rem;
+    }
+    
+    .headerSearchBar{
+        display: none;
+    }
+    
+    #searchButton{
+        position: absolute;
+        grid-column: 5/5;
+        fill: #545454;
+        border: 0;
+        color: #545454;
+        text-decoration: none;
+        top: 1.1rem;
+        justify-self: center;
+        margin-left: 5rem;
+    }
+    
+    .icon {
+        position: relative;
+        padding-right:0;
+    }
+    
+    .chevronIcon{
+        vertical-align: middle;
+    }
+    
+    .searchText,
+    .profileText {
+        position: relative;
+        display: none;
+    }
+    
+    
+    .profileButtonNav {
+        grid-column: 5/5;
+        fill: #545454;
+        stroke: #545454;
+        background-color: transparent;
+        border: none;
+        color: #545454;
+        cursor: pointer;
+        text-decoration: none;
+        top: .2rem;
+        position: relative;
+        margin-right: 3rem;
+    }
+    
+    .menuButtonCloseTitle{
+        display: none;
+    }
+    
+    
+}
