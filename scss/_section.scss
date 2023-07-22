@@ -2,7 +2,9 @@
 @use 'mixins';
 @use 'placeholders';
     
-    
+section {
+
+
     .second-banner {
         display: flex;
         flex-wrap: wrap;
@@ -129,5 +131,5 @@
         }
     
     }
-    
+}
     
