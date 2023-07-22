@@ -1,5 +1,6 @@
+@use 'variables';
+
 %card-style {
-    border: 1px solid $second-color;
-    padding: 10px;
-  }
-    
+  border: 1px solid variables.$second-color;
+  padding: 10px;
+}
