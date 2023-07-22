@@ -1,3 +1,5 @@
+// @use '../style/style.css'
+@use 'variables';
 @use 'body';
 @use 'footer';
 @use 'hamburger';
@@ -7,4 +9,3 @@
 @use 'placeholders';
 @use 'section';
 @use 'typography';
-@use 'variables';

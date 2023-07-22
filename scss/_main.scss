@@ -22,7 +22,7 @@
         padding: 0 2rem;
         text-decoration: none;
         list-style: none;
-        color: $second-color; /* Assuming you have defined $second-color in 'variables.scss' */
+        color: variables.$second-color; /* Assuming you have defined $second-color in 'variables.scss' */
         width: 100%; /* Added property */
         text-align: left;
     }
